@@ -1,2 +1,0 @@
-# sabavathmanohar.io
-Personal website.
