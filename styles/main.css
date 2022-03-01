@@ -1,0 +1,116 @@
+:root {
+    --color-lighter: #efedf8;
+    --color-mid-light: #dedcea;
+    --color-light: #d0cde1;
+    --color-spc: #a36bff;
+    --color-dark: #3f3d56;
+    --color-darker: #2f2e41;
+    --color-darkiest: #12121d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-darker);
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e3e1ea+43,efedf8+100 */
+    background: #e3e1ea; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #e3e1ea 43%, #efedf8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #e3e1ea 43%,#efedf8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #e3e1ea 43%,#efedf8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e1ea', endColorstr='#efedf8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    font: 500 1.2rem Poppins;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    transition: background 0.2s linear;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--color-darker);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--color-spc);
+}
+
+body.dark::-webkit-scrollbar-track {
+    background: var(--color-lighter);
+}
+
+body.dark {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#161023+0,12121d+47,07070f+99 */
+    background: #161023; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #161023 0%, #12121d 47%, #07070f 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #161023 0%,#12121d 47%,#07070f 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #161023 0%,#12121d 47%,#07070f 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161023', endColorstr='#07070f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body.dark #about,
+body.dark #skills {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3f3d56+0,252538+36,1f1b35+99 */
+    background: #3f3d56; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #3f3d56 0%, #252538 36%, #1f1b35 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #3f3d56 0%,#252538 36%,#1f1b35 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #3f3d56 0%,#252538 36%,#1f1b35 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3d56', endColorstr='#1f1b35',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body.dark .menu-nav,
+body.dark .modes {
+    background-color: var(--color-darker);
+}
+
+body.dark #projects .proj-area .projects-area .proj {
+    background-color: var(--color-darker);
+}
+
+body.dark #projects .proj-area .proj-title span,
+body.dark #skills .skills-area .skills-title .my-skillset,
+body.dark #other .other .other-title span {
+    color: var(--color-spc);
+}
+
+body.dark h5, body.dark h1,
+body.dark h3, body.dark a,
+body.dark p, body.dark #projects .proj-area .projects-area .proj .content-proj h3,
+body.dark #other .other .other-infos .info-area .info-text p {
+    color: var(--color-lighter);
+}
+
+body.dark .navigation-icon {
+    filter: invert(99%) sepia(14%) saturate(4256%) hue-rotate(181deg) brightness(97%) contrast(81%);
+}
+
+body.dark #about .desc .social-medias,
+body.dark #other .other .other-infos .info-area .social-medias img {
+    filter: invert(97%) sepia(30%) saturate(4256%) hue-rotate(190deg) brightness(125%) contrast(95%);
+}
+
+body.dark #other .other .other-infos .info-area {
+    background-color: #48475883;
+}
+
+body.dark #footer {
+    background-color: var(--color-darker);
+}
+
+body.dark #footer .text span {
+    color: var(--color-light);
+}
+
+body.dark #footer-back {
+    background-color: #0e0e17;
+}

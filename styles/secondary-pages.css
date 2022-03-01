@@ -1,0 +1,341 @@
+#about {
+    height: 100vh;
+    display: flex;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dedcea+21,cfcdd6+100 */
+    background: #dedcea; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #dedcea 21%, #cfcdd6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #dedcea 21%,#cfcdd6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #dedcea 21%,#cfcdd6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedcea', endColorstr='#cfcdd6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#about .about-area {
+    width: 60vw;
+    height: 35vh;
+    margin: 32.5vh auto 32.5vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 5fr;
+}
+
+#about .about-area .titulo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: var(--color-spc);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#about .about-area .description {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+#about .image {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#about .image img {
+    width: 300px;
+    border-radius: 100%;
+}
+
+#about .desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    color: var(--color-darker);
+}
+
+#about .desc p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .desc .social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 2.5vw;
+}
+
+#about .desc .social-medias .change-color-icon {
+    filter: invert(14%) sepia(11%) saturate(1919%) hue-rotate(204deg) brightness(90%) contrast(85%);
+}
+
+#about .desc .social-medias img {
+    width: 2vw;
+    margin: 0.5vh 1vw -0.1vh;
+}
+
+#projects {
+    height: 100vh;
+    display: flex;
+}
+
+#projects .proj-area {
+    width: 80vw;
+    height: 85vh;
+    margin: 10vh auto 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+#projects .proj-area .proj-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .proj-area .proj-title span {
+    font-size: 2rem;
+    color: var(--color-darker);
+}
+
+#projects .proj-area .projects-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#projects .proj-area .projects-area .proj {
+    margin: 20px;
+    background-color: var(--color-light);
+    border-radius: 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+#projects .proj-area .projects-area .proj::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: var(--color-spc);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+#projects .proj-area .projects-area .proj:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+#projects .proj-area .projects-area .proj .img-proj {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    z-index: 1;
+}
+
+#projects .proj-area .projects-area .proj .img-proj img {
+    height: 7vw;
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+#projects .proj-area .projects-area .proj:hover .img-proj img {
+    max-width: 35%;
+}
+
+#projects .proj-area .projects-area .proj .content-proj {
+    position: relative;
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+#projects .proj-area .projects-area .proj .content-proj h3 {
+    color: var(--color-darker);
+}
+
+#projects .proj-area .projects-area .proj .content-proj .visit {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 0.5px 10px;
+    margin-top: 2vh;
+    background: var(--color-spc);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#projects .proj-area .projects-area .proj:hover .content-proj .visit {
+    top: 0;
+    opacity: 1;
+}
+
+#skills {
+    height: 100vh;
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dedcea+21,cfcdd6+100 */
+    background: #dedcea; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #dedcea 21%, #cfcdd6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #dedcea 21%,#cfcdd6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #dedcea 21%,#cfcdd6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dedcea', endColorstr='#cfcdd6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    display: flex;
+}
+
+#skills .skills-area {
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh auto 10vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+#skills .skills-area .skills-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .skills-area .skills-title .my-skillset {
+    font-size: 2rem;
+    color: var(--color-darker);
+}
+
+#skills .skills-area .skillset {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#skills .skills-area .skillset .skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills .skills-area .skillset .skill img {
+    width: 10vw;
+}
+
+#other {
+    height: 100vh;
+    display: flex;
+}
+
+#other .other {
+    height: 50vh;
+    width: 35vw;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+#other .other .other-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#other .other .other-title span {
+    font-size: 2rem;
+    color: var(--color-darker);
+}
+
+#other .other .other-infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#other .other .other-infos .info-area {
+    margin: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 3fr 1.5fr;
+    row-gap: 1vh;
+    background-color: var(--color-light);
+    border-radius: 10px;
+}
+
+#other .other .other-infos .info-area .info-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#other .other .other-infos .info-area .info-draw img {
+    width: 13vw;
+}
+
+#other .other .other-infos .info-area .info-text {
+    margin: 50px;
+}
+
+#other .other .other-infos .info-area .info-text p {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-highlight);
+    text-align: center;
+}
+
+#other .other .other-infos .info-area .social-medias {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#other .other .other-infos .info-area .social-medias img {
+    filter: invert(14%) sepia(10%) saturate(1859%) hue-rotate(204deg) brightness(99%) contrast(87%);
+    width: 2.2vw;
+    margin: 0 2vw 0 2vw;
+}
+
+#secondary-pages #navigation {
+    height: 100vh;
+    width: 64px;
+    position: fixed;
+    top: 35%;
+}
+
+#navigation .nav-bar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation li {
+    margin: 10px 20px 10px 20px;
+    list-style-type: none;
+}
+
+#footer {
+    height: 5vh;
+    background-color: var(--color-light);
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 40px;
+}
+
+#footer .text {
+    width: 95vw;
+    margin: 1vh auto 1vh auto;
+}
+
+#footer .text span {
+    color: var(--color-darkiest);
+}
